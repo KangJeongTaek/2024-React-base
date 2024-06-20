@@ -1,9 +1,6 @@
-import './App.css';
+import EventPractice from './EventPractice';
 
-function App() {
-  const name = "리액트"
-  return <div className="react">{name}
-  </div>
-}
-
+const App = () =>{
+  return<EventPractice/>;
+};
 export default App;
