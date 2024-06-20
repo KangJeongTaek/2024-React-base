@@ -1,7 +1,9 @@
+import './App.css';
 
 function App() {
-  const name= 'react';
-  return <div>{name === '리액트' ?<h1>리액트입니다.</h1> : null}</div>;
+  const name = "리액트"
+  return <div className="react">{name}
+  </div>
 }
 
 export default App;
