@@ -38,3 +38,10 @@ Set-ExecutionPolicy RemoteSigned
 ### ref: DOM에 이름달기
 
 ## [6장](https://github.com/KangJeongTaek/2024-React-base/blob/main/md/Ch06.md)
+- 배열
+- key
+- map
+- 응용
+
+## [7장](https://github.com/KangJeongTaek/2024-React-base/blob/main/md/Ch07.md)
+- 라이프사이클

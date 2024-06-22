@@ -1,16 +1,12 @@
-import ScrollBox from './scrollbox/ScrollBox';
+import React from 'react';
+import IterationSample from './iteration/iterationSample'
 
-import React, { Component } from 'react';
-
-class App extends Component {
-  render() {
-    return (
-      <div>
-        <ScrollBox ref={(ref) => this.scrollBox=ref}/>        
-          <button onClick={(() => this.scrollBox.scrollToBottom())}>내리기</button>
-      </div>
-    );
-  }
-}
+const App = () => {
+  return (
+    <div>
+      <IterationSample/>  
+    </div>
+  );
+};
 
 export default App;
