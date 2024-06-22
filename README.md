@@ -20,3 +20,16 @@
 ## [4장](https://github.com/KangJeongTaek/2024-React-base/blob/main/md/Ch04.md)
 ### 이벤트 핸들링
 - 리액트의 이벤트 시스템
+- 집에서 yarn -start를 실행하니
+```bash
+yarn : 이 시스템에서 스크립트를 실행할 수 없으므로 C:\Users\Home\AppData\Roaming\npm\yarn.ps1 파일을 로드할 수 없습니다. 자세한 내용은 about_Execution_Policies(https://go.microsoft.com/fwlink/?LinkID=135170)를 참조하
+십시오.
+```
+
+- 스크립트 실행 권한이 제한되어 있기에 발생하는 문제.
+```bash
+get-help Set-ExcutionPolicy
+
+Set-ExecutionPolicy RemoteSigned
+#2 명령어를 실행하여 해결
+```
