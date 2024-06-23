@@ -44,4 +44,7 @@ Set-ExecutionPolicy RemoteSigned
 - 응용
 
 ## [7장](https://github.com/KangJeongTaek/2024-React-base/blob/main/md/Ch07.md)
-- 라이프사이클
+### 라이프사이클
+
+## [8장](https://github.com/KangJeongTaek/2024-React-base/blob/main/md/Ch08.md)
+### Hooks
