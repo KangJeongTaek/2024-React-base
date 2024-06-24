@@ -1,9 +1,6 @@
-import Info from "./info/Info";
-
+import Counter from "./counter/Counter";
 function App() {
-  return (
-    <Info/>
-  );
+  return <Counter/>
 }
 
 export default App;
