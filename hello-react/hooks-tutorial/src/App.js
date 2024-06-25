@@ -1,6 +1,6 @@
-import Counter from "./counter/Counter";
+import Average from "./Average/Average";
 function App() {
-  return <Counter/>
+  return <Average/>
 }
 
 export default App;
