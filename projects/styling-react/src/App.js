@@ -1,13 +1,13 @@
-
-import './App.css';
-import CSSModule from './CSSModule';
-
-function App() {
-  return (
-    <div>
-      <CSSModule/>
-    </div>
-  );
+import React, { Component } from 'react';
+import StyledComponent from './StyledComponent';
+class App extends Component {
+  render() {
+    return (
+      <div>
+        <StyledComponent/>
+      </div>
+    );
+  }
 }
 
 export default App;
