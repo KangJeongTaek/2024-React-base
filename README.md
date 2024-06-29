@@ -52,3 +52,10 @@ Set-ExecutionPolicy RemoteSigned
 
 ## [9장](https://github.com/KangJeongTaek/2024-React-base/blob/main/md/Ch09.md)
 ### 컴포넌트 스타일링
+
+## [10장](https://github.com/KangJeongTaek/2024-React-base/blob/main/md/Ch10.md)
+### 일정관리 웹 애플리케이션 만들기
+1. 프로젝트 구성하기
+2. UI 구성하기
+3. 기능 구현하기
+4. 정리
