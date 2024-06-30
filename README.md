@@ -59,3 +59,6 @@ Set-ExecutionPolicy RemoteSigned
 2. UI 구성하기
 3. 기능 구현하기
 4. 정리
+
+## [11장](https://github.com/KangJeongTaek/2024-React-base/blob/main/md/Ch11.md)
+### 컴포넌트 성능 최적화
