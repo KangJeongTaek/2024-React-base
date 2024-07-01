@@ -64,5 +64,7 @@ Set-ExecutionPolicy RemoteSigned
 ### 컴포넌트 성능 최적화
 
 ## [12장](https://github.com/KangJeongTaek/2024-React-base/blob/main/md/Ch12.md)
-### 12.1.2 immer를 사용하여 더 쉽게 불변성 유지하기
-1. immer 설치와 사용법 알아보기
+### immer 설치와 사용법 알아보기
+
+## [13장](https://github.com/KangJeongTaek/2024-React-base/blob/main/md/Ch12.md)
+### 리액트 라우터로 SPA 개발하기

@@ -1,6 +1,6 @@
-import { useCallback, useState } from 'react';
+import { produce } from "immer";
+import { useCallback, useRef, useState } from 'react';
 import './App.css';
-import logo from './logo.svg';
 
 function App() {
   const nextId = useRef(1);
@@ -11,14 +11,15 @@ function App() {
   });
   // input 수정을 위한 함수
   const onChange = useCallback(
-    e => {
+    e =>{
       const {name,value} = e.target;
-      setForm({
-        ...form,
-        [name] : [value]
-      });
-    },
-    [form]
+      setForm(
+      produce(draft =>{
+        draft[name] = value;
+      })
+      );
+    }
+    ,[]
   );
 
   // form 등록을 위한 함수
@@ -31,10 +32,11 @@ function App() {
         username:form.username
       };
 
-      setData({
-        ...data,
-        array:data.array.concat(info)
-      });
+      setData(
+        produce( draft => {
+          draft.array.push(info)
+        })
+      );
 
       setForm({
         name:'',
@@ -42,36 +44,46 @@ function App() {
       });
       nextId.current += 1
     },
-    [data,form.name,form.username]
+    [form.name,form.username]
   );
 
   // 항목을 삭제하는 함수
   const onRemove = useCallback(
     id =>{
-      setData({
-        ...data,
-        array:data.array.filter(info => info.id !== id)
-      });
+      setData(
+        produce(draft =>{
+          draft.array.splice(draft.array.findIndex(info => info.id === id),1);
+        })
+      );
     },
-    [data]
+    []
   );
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <form onSubmit={onSubmit}>
+        <input
+          name='username'
+          placeholder='아이디'
+          value={form.username}
+          onChange={onChange}/>
+      <input
+        name='name'
+        placeholder='이름'
+        value={form.name}
+        onChange={onChange}/>
+        <button type='submit'>등록</button>
+        </form>
+        <div>
+          <ul>
+            {data.array.map(info =>(
+              <li key={info.id} onClick={() => onRemove(info.id)}>
+                {info.username} ({info.name})
+              </li>
+            ))}
+          </ul>
+        </div>
     </div>
+
   );
 }
 
