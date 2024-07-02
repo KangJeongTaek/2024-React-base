@@ -66,8 +66,8 @@ Set-ExecutionPolicy RemoteSigned
 ## [12장](https://github.com/KangJeongTaek/2024-React-base/blob/main/md/Ch12.md)
 ### immer 설치와 사용법 알아보기
 
-## [13장](https://github.com/KangJeongTaek/2024-React-base/blob/main/md/Ch12.md)
+## [13장](https://github.com/KangJeongTaek/2024-React-base/blob/main/md/Ch13.md)
 ### 리액트 라우터로 SPA 개발하기
 
-## [14장](https://github.com/KangJeongTaek/2024-React-base/blob/main/md/Ch13.md)
+## [14장](https://github.com/KangJeongTaek/2024-React-base/blob/main/md/Ch14.md)
 ### 외부 API를 연동하여 뉴스 뷰어 만들기
