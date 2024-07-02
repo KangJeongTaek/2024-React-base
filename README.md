@@ -68,3 +68,6 @@ Set-ExecutionPolicy RemoteSigned
 
 ## [13장](https://github.com/KangJeongTaek/2024-React-base/blob/main/md/Ch12.md)
 ### 리액트 라우터로 SPA 개발하기
+
+## [14장](https://github.com/KangJeongTaek/2024-React-base/blob/main/md/Ch13.md)
+### 외부 API를 연동하여 뉴스 뷰어 만들기
