@@ -74,3 +74,9 @@ Set-ExecutionPolicy RemoteSigned
 
 ## [15장](https://github.com/KangJeongTaek/2024-React-base/blob/main/md/Ch15.md)
 ### Context API
+
+## [16장](https://github.com/KangJeongTaek/2024-React-base/blob/main/md/Ch16.md)
+### 리덕스 라이브러리 이해하기
+
+## [17장](https://github.com/KangJeongTaek/2024-React-base/blob/main/md/Ch17.md)
+### 리덕스를 사용하여 리액트 애플리케이션 상태 관리하기
