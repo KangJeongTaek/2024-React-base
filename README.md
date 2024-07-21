@@ -80,3 +80,6 @@ Set-ExecutionPolicy RemoteSigned
 
 ## [17장](https://github.com/KangJeongTaek/2024-React-base/blob/main/md/Ch17.md)
 ### 리덕스를 사용하여 리액트 애플리케이션 상태 관리하기
+
+## [18장](https://github.com/KangJeongTaek/2024-React-base/blob/main/md/Ch18.md)
+### 리덕스 미들웨어를 통한 비동기 작업 관리
